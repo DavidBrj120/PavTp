@@ -41,6 +41,8 @@ namespace PavTpGrupo11
             this.aBMObrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.camionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMCamionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,10 +52,12 @@ namespace PavTpGrupo11
             this.obrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.respuestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.repuestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aBMRepuestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aBMMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,11 +72,13 @@ namespace PavTpGrupo11
             this.proveedoresToolStripMenuItem1,
             this.obraToolStripMenuItem,
             this.camionesToolStripMenuItem,
-            this.materialesToolStripMenuItem});
+            this.materialesToolStripMenuItem,
+            this.usuariosToolStripMenuItem,
+            this.repuestoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(850, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1133, 28);
             this.menuStrip1.TabIndex = 3;
             // 
             // proveedorerToolStripMenuItem
@@ -80,14 +86,14 @@ namespace PavTpGrupo11
             this.proveedorerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarEmpleadoToolStripMenuItem});
             this.proveedorerToolStripMenuItem.Name = "proveedorerToolStripMenuItem";
-            this.proveedorerToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.proveedorerToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.proveedorerToolStripMenuItem.Text = "Empleados";
             this.proveedorerToolStripMenuItem.Click += new System.EventHandler(this.proveedorerToolStripMenuItem_Click);
             // 
             // registrarEmpleadoToolStripMenuItem
             // 
             this.registrarEmpleadoToolStripMenuItem.Name = "registrarEmpleadoToolStripMenuItem";
-            this.registrarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.registrarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
             this.registrarEmpleadoToolStripMenuItem.Text = "ABM empleado";
             this.registrarEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.registrarEmpleadoToolStripMenuItem_Click);
             // 
@@ -96,13 +102,13 @@ namespace PavTpGrupo11
             this.barriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarBarrioToolStripMenuItem});
             this.barriosToolStripMenuItem.Name = "barriosToolStripMenuItem";
-            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.barriosToolStripMenuItem.Text = "Barrios";
             // 
             // registrarBarrioToolStripMenuItem
             // 
             this.registrarBarrioToolStripMenuItem.Name = "registrarBarrioToolStripMenuItem";
-            this.registrarBarrioToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.registrarBarrioToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
             this.registrarBarrioToolStripMenuItem.Text = "ABM barrio";
             this.registrarBarrioToolStripMenuItem.Click += new System.EventHandler(this.registrarBarrioToolStripMenuItem_Click);
             // 
@@ -111,13 +117,13 @@ namespace PavTpGrupo11
             this.proveedoresToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aBMProveedoresToolStripMenuItem});
             this.proveedoresToolStripMenuItem1.Name = "proveedoresToolStripMenuItem1";
-            this.proveedoresToolStripMenuItem1.Size = new System.Drawing.Size(84, 20);
+            this.proveedoresToolStripMenuItem1.Size = new System.Drawing.Size(105, 24);
             this.proveedoresToolStripMenuItem1.Text = "Proveedores";
             // 
             // aBMProveedoresToolStripMenuItem
             // 
             this.aBMProveedoresToolStripMenuItem.Name = "aBMProveedoresToolStripMenuItem";
-            this.aBMProveedoresToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.aBMProveedoresToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.aBMProveedoresToolStripMenuItem.Text = "ABM Proveedores";
             this.aBMProveedoresToolStripMenuItem.Click += new System.EventHandler(this.aBMProveedoresToolStripMenuItem_Click);
             // 
@@ -126,13 +132,13 @@ namespace PavTpGrupo11
             this.obraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aBMObrasToolStripMenuItem});
             this.obraToolStripMenuItem.Name = "obraToolStripMenuItem";
-            this.obraToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.obraToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.obraToolStripMenuItem.Text = "Obra";
             // 
             // aBMObrasToolStripMenuItem
             // 
             this.aBMObrasToolStripMenuItem.Name = "aBMObrasToolStripMenuItem";
-            this.aBMObrasToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.aBMObrasToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.aBMObrasToolStripMenuItem.Text = "ABM Obras";
             this.aBMObrasToolStripMenuItem.Click += new System.EventHandler(this.aBMObrasToolStripMenuItem_Click);
             // 
@@ -141,15 +147,30 @@ namespace PavTpGrupo11
             this.camionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aBMCamionToolStripMenuItem});
             this.camionesToolStripMenuItem.Name = "camionesToolStripMenuItem";
-            this.camionesToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.camionesToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.camionesToolStripMenuItem.Text = "Camiones";
             // 
             // aBMCamionToolStripMenuItem
             // 
             this.aBMCamionToolStripMenuItem.Name = "aBMCamionToolStripMenuItem";
-            this.aBMCamionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.aBMCamionToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.aBMCamionToolStripMenuItem.Text = "ABM camion";
             this.aBMCamionToolStripMenuItem.Click += new System.EventHandler(this.aBMCamionToolStripMenuItem_Click);
+            // 
+            // materialesToolStripMenuItem
+            // 
+            this.materialesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMMaterialesToolStripMenuItem});
+            this.materialesToolStripMenuItem.Name = "materialesToolStripMenuItem";
+            this.materialesToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.materialesToolStripMenuItem.Text = "Materiales";
+            // 
+            // aBMMaterialesToolStripMenuItem
+            // 
+            this.aBMMaterialesToolStripMenuItem.Name = "aBMMaterialesToolStripMenuItem";
+            this.aBMMaterialesToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.aBMMaterialesToolStripMenuItem.Text = "ABM Materiales";
+            this.aBMMaterialesToolStripMenuItem.Click += new System.EventHandler(this.aBMMaterialesToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -165,25 +186,25 @@ namespace PavTpGrupo11
             // consultarClientesToolStripMenuItem
             // 
             this.consultarClientesToolStripMenuItem.Name = "consultarClientesToolStripMenuItem";
-            this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.consultarClientesToolStripMenuItem.Text = "Consultar clientes";
             // 
             // registrarClientesToolStripMenuItem
             // 
             this.registrarClientesToolStripMenuItem.Name = "registrarClientesToolStripMenuItem";
-            this.registrarClientesToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.registrarClientesToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.registrarClientesToolStripMenuItem.Text = "Registrar clientes";
             // 
             // modifcarClientesToolStripMenuItem
             // 
             this.modifcarClientesToolStripMenuItem.Name = "modifcarClientesToolStripMenuItem";
-            this.modifcarClientesToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.modifcarClientesToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.modifcarClientesToolStripMenuItem.Text = "Modifcar clientes";
             // 
             // borrarClienteToolStripMenuItem
             // 
             this.borrarClienteToolStripMenuItem.Name = "borrarClienteToolStripMenuItem";
-            this.borrarClienteToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.borrarClienteToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.borrarClienteToolStripMenuItem.Text = "Borrar cliente";
             // 
             // empleadosToolStripMenuItem
@@ -210,12 +231,44 @@ namespace PavTpGrupo11
             this.respuestosToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.respuestosToolStripMenuItem.Text = "Respuestos";
             // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMUsuariosToolStripMenuItem});
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // aBMUsuariosToolStripMenuItem
+            // 
+            this.aBMUsuariosToolStripMenuItem.Name = "aBMUsuariosToolStripMenuItem";
+            this.aBMUsuariosToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.aBMUsuariosToolStripMenuItem.Text = "ABM usuarios";
+            this.aBMUsuariosToolStripMenuItem.Click += new System.EventHandler(this.aBMUsuariosToolStripMenuItem_Click);
+            // 
+            // repuestoToolStripMenuItem
+            // 
+            this.repuestoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aBMRepuestoToolStripMenuItem});
+            this.repuestoToolStripMenuItem.Name = "repuestoToolStripMenuItem";
+            this.repuestoToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.repuestoToolStripMenuItem.Text = "Repuesto";
+            // 
+            // aBMRepuestoToolStripMenuItem
+            // 
+            this.aBMRepuestoToolStripMenuItem.Name = "aBMRepuestoToolStripMenuItem";
+            this.aBMRepuestoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aBMRepuestoToolStripMenuItem.Text = "ABM repuesto";
+            this.aBMRepuestoToolStripMenuItem.Click += new System.EventHandler(this.aBMRepuestoToolStripMenuItem_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PavTpGrupo11.Properties.Resources.ferree;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 90);
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 111);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(879, 241);
+            this.pictureBox2.Size = new System.Drawing.Size(1172, 297);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -224,37 +277,24 @@ namespace PavTpGrupo11
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 328);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 404);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(849, 115);
+            this.pictureBox1.Size = new System.Drawing.Size(1132, 142);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // materialesToolStripMenuItem
-            // 
-            this.materialesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aBMMaterialesToolStripMenuItem});
-            this.materialesToolStripMenuItem.Name = "materialesToolStripMenuItem";
-            this.materialesToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
-            this.materialesToolStripMenuItem.Text = "Materiales";
-            // 
-            // aBMMaterialesToolStripMenuItem
-            // 
-            this.aBMMaterialesToolStripMenuItem.Name = "aBMMaterialesToolStripMenuItem";
-            this.aBMMaterialesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aBMMaterialesToolStripMenuItem.Text = "ABM Materiales";
-            this.aBMMaterialesToolStripMenuItem.Click += new System.EventHandler(this.aBMMaterialesToolStripMenuItem_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 448);
+            this.ClientSize = new System.Drawing.Size(1133, 551);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
@@ -294,6 +334,10 @@ namespace PavTpGrupo11
         private System.Windows.Forms.ToolStripMenuItem aBMCamionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem materialesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMMaterialesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem repuestoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aBMRepuestoToolStripMenuItem;
     }
 }
 

@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace PavTpGrupo11.Entidades
 {
-   public class Repuesto
+    public class Usuario
     {
-        public int Codigo { get; set; }
-
         public string nombre { get; set; }
+        public string contrasena { get; set; }
 
-        public Repuesto(int cod, string nom)
+        public Usuario(string nom, string pass)
         {
-            this.Codigo = cod;
             this.nombre = nom;
+            this.contrasena = pass;
+        }
+        public Usuario()
+        {
+
         }
     }
 }

@@ -55,8 +55,8 @@ namespace PavTpGrupo11.Formularios
                 }
                 catch (Exception)
                 {
-
-                    throw;
+                    MessageBox.Show("Ese empleado ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   
                 }
 
 

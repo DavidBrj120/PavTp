@@ -7,13 +7,127 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 using PavTpGrupo11.Formularios;
+
 namespace PavTpGrupo11.AccesoADatos
+
 
 {
    public  class ConexionSQL
     {
         static string cadena = System.Configuration.ConfigurationManager.AppSettings["CadenaBD"];
         SqlConnection conexion = new SqlConnection(cadena);
+
+        public int Login( string us, string pass )
+        {
+            int count;
+            conexion.Open();
+            string query = "Select Count(*) FROM Usuario WHERE Nombre = '"+us+ "'and Contraseña = '"+pass+"'";
+
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            count = Convert.ToInt32(cmd.ExecuteScalar());
+            conexion.Close();
+            return count;
+        }
+        public DataTable ConsultarUsuarios()
+        {
+            string query = "SELECT * FROM Usuario";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+
+            return tabla;
+
+
+        }
+
+        public int InsertarUsuarioU(string us, string contra)
+        {
+            int flag = 0;
+            conexion.Open();
+            string query = "insert into Usuario(Nombre, Contraseña ) values('" + us + "', '" +  contra + "')";
+
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            flag = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return flag;
+        }
+
+        public int EliminarUsuario(string nom)
+        {
+            int flag = 0;
+            conexion.Open();
+            string query = "DELETE FROM Usuario WHERE Nombre = '" + nom + "'";
+
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            flag = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return flag;
+        }
+        public int ModificarUsuario(string nom, string con)
+
+        {
+            int flag = 0;
+            conexion.Open();
+            string query = "UPDATE Usuario SET Contraseña = '" + con + "' WHERE Nombre = '" + nom + "'";
+
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            flag = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return flag;
+
+
+        }
+        public DataTable ObtenerRepuestos()
+        {
+            string query = "SELECT * FROM REPUESTO";
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+
+            return tabla;
+
+
+        }
+
+        public int InsertarRepuesto(string cod, string nom)
+        {
+            int flag = 0;
+            conexion.Open();
+            string query = "insert into REPUESTO(Codigo_Repuesto, Nombre_Repuesto ) values('" + cod + "', '" + nom + "')";
+
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            flag = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return flag;
+        }
+
+        public int EliminarRespuesto(int cod)
+        {
+            int flag = 0;
+            conexion.Open();
+            string query = "DELETE FROM REPUESTO WHERE Codigo_Repuesto = '" + cod + "'";
+
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            flag = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return flag;
+        }
+        public int ModificarRepuesto(int cod, string nom)
+
+        {
+            int flag = 0;
+            conexion.Open();
+            string query = "UPDATE REPUESTO SET Nombre_Repuesto = '" + nom + "' WHERE Codigo_Repuesto = '" + cod + "'";
+
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            flag = cmd.ExecuteNonQuery();
+            conexion.Close();
+            return flag;
+
+
+        }
 
         public DataTable ConsultarUsuariosDG()
         {

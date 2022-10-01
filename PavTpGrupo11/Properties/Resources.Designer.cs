@@ -133,6 +133,16 @@ namespace PavTpGrupo11.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap group {
+            get {
+                object obj = ResourceManager.GetObject("group", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Image1 {
             get {
                 object obj = ResourceManager.GetObject("Image1", resourceCulture);
@@ -156,6 +166,16 @@ namespace PavTpGrupo11.Properties {
         internal static System.Drawing.Bitmap pav_ferre {
             get {
                 object obj = ResourceManager.GetObject("pav_ferre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap piezas_de_repuesto {
+            get {
+                object obj = ResourceManager.GetObject("piezas_de_repuesto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

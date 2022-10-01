@@ -93,5 +93,22 @@ namespace PavTpGrupo11
             ABM_materialescs ventana = new ABM_materialescs();
             ventana.Show();
         }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void aBMUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_usuarios ventana = new ABM_usuarios();
+            ventana.Show();
+        }
+
+        private void aBMRepuestoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Respuestos v = new ABM_Respuestos();
+            v.Show();
+        }
     }
 }
